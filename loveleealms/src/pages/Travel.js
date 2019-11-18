@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
-class Registry extends Component {
+class Travel extends Component {
     
     render(){
         return (
             <div>
-                <h1>Registry</h1>
+                <h1>Travel</h1>
             </div>
         )
     }
 }
 
 
-export default Registry;
+export default Travel;
