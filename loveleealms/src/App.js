@@ -8,7 +8,7 @@ import Travel from "./pages/Travel";
 import Registry from "./pages/Registry";
 import RSVP from "./pages/RSVP";
 import Navbar from "./components/Navbar/index";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
 			      <Route exact path="/travel" component={Travel} />
             <Route exact path="/registry" component={Registry} />
             <Route exact path="/rsvp" component={RSVP} />
-            {/* <Footer /> */}
+            <Footer />
           </Wrapper>
           </div>
       </Router>
