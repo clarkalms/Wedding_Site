@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-// import Jumbotron from '../components/Jumbotron';
+import Jumbotron from '../components/Jumbotron/index';
 class Home extends Component {
     
     render(){
         return (
             <div>
-                {/* <Jumbotron /> */}
+                <Jumbotron />
                 <h1>Home</h1>
             </div>
         )
