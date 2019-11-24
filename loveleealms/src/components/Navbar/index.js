@@ -23,7 +23,7 @@ class Navbar extends Component {
                 <nav>
                     <div class="nav-wrapper">
                     <Link className="brand-logo" to="/">
-                        J&C 9.9.2020
+                        LEE + ALMS
                     </Link>
                     <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
@@ -74,7 +74,7 @@ class Navbar extends Component {
                                 window.location.pathname === "/rsvp" ? "nav-link active" : "nav-link"
                             }
                             >
-                            rsvp
+                            RSVP
                             </Link>
                         </li>
                     </ul>
@@ -139,7 +139,7 @@ class Navbar extends Component {
                             window.location.pathname === "/rsvp" ? "nav-link active" : "nav-link"
                         }
                         >
-                        rsvp
+                        RSVP
                         </Link>
                     </li>
                 </ul>

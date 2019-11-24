@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import moment from 'react-moment';
-// import moment from 'moment';
 import moment from 'moment-timezone';
 
 export default class Countdown extends Component {
