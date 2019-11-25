@@ -1,19 +1,39 @@
 .jumbotron {
     text-align: center;
 }
+.jumbotron .ampersand {
+    text-align: center;
+}
 
 .title {
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 400;
     color: white;
-    margin-top: 170px;
+    margin-top: 190px;
 }
 .location {
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 .date {
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     padding-bottom: 35px;
+}
+
+@media screen and (max-width: 767px){
+    .jumbotron.col {
+        height: 50px;
+        margin: 0;
+    }
+    .title {
+        font-size: 50px;
+        margin-top: 0px;
+    }
+    #jeewon {
+        margin-top: 50px;
+    }
+    .date {
+        padding-bottom: 10px;
+    }
 }

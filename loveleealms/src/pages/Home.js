@@ -17,7 +17,7 @@ class Home extends Component {
                 backgroundPosition: 'center',
                 backgroundRepeat: 'none',
                 backgroundAttachment: 'fixed',
-                height: '750px',
+                height: '740px',
                 }}
             >
                 <Container>

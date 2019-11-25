@@ -4,8 +4,12 @@ class RSVP extends Component {
     
     render(){
         return (
-            <div>
-                <h1>RSVP</h1>
+            
+            <div style={{ 
+                backgroundColor: 'green',
+                height: '740px'
+                }}>
+            
                 <RSVPForm />
             </div>
         )

@@ -4,8 +4,10 @@ class Travel extends Component {
     
     render(){
         return (
-            <div>
-                <h1>Travel</h1>
+            <div style={{ 
+                backgroundColor: 'yellow',
+                height: '740px'
+                }}>
             </div>
         )
     }

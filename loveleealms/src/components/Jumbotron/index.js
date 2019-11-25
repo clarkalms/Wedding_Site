@@ -6,24 +6,35 @@ export default class Jumbotron extends Component {
 	render() {
 		return (
 			<div className='jumbotron'>
+				
 				<Row>
-					<Col size='l12 m12 s12'>
+					<Col size='l5 m4 s12'>
+						<div className='title' id='jeewon'>
+							<span className='title-jeewon'>JEEWON</span>
+						</div>
+					</Col>
+					<Col size='l2 m4 s12 ampersand'>
+						<div className='title' >
+							<span className='title-ampersand'>&</span>
+						</div>
+					</Col>
+					<Col size='l5 m4 s12'>
 						<div className='title'>
-							<span className='title'>JEEWON & CLARK</span>
+							<span className='title-clark'>CLARK</span>
 						</div>
 					</Col>
 				</Row>
 				<Row>
 					<Col size='l12 m12 s12'>
 						<div className='location'>
-							<span className='location'>Florence, Italy</span>
+							<span>FLORENCE, ITALY</span>
 						</div>
 					</Col>
 				</Row>
 				<Row>
 					<Col size='l12 m12 s12'>
 						<div className='date'>
-							<span className='wedding-date'>09.09.2020</span>
+							<span>09.09.2020</span>
 						</div>
 					</Col>
 				</Row>

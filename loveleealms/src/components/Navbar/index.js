@@ -19,12 +19,19 @@ class Navbar extends Component {
         return (
             <div>
                 <nav>
-                    <div class="nav-wrapper">
-                    <Link className="brand-logo" to="/">
-                        LEE + ALMS
-                    </Link>
+                    <div className="nav-wrapper">
                     <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
+                    <ul className="left hide-on-med-and-down">
+                        <li className="nav-item">
+                            <Link
+                            to="/"
+                            className={
+                                window.location.pathname === "/" ? "nav-link active" : "nav-link"
+                            }
+                            >
+                            HOME
+                            </Link>
+                        </li>
                         <li className="nav-item">
                             <Link
                             to="/gallery"
@@ -32,7 +39,7 @@ class Navbar extends Component {
                                 window.location.pathname === "/gallery" ? "nav-link active" : "nav-link"
                             }
                             >
-                            Gallery
+                            GALLERY
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -42,7 +49,7 @@ class Navbar extends Component {
                                 window.location.pathname === "/thewedding" ? "nav-link active" : "nav-link"
                             }
                             >
-                            The Wedding
+                            THE WEDDING
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -52,7 +59,7 @@ class Navbar extends Component {
                                 window.location.pathname === "/travel" ? "nav-link active" : "nav-link"
                             }
                             >
-                            Travel
+                            TRAVEL
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -62,7 +69,7 @@ class Navbar extends Component {
                                 window.location.pathname === "/registry" ? "nav-link active" : "nav-link"
                             }
                             >
-                            Registry
+                            REGISTRY
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -79,7 +86,7 @@ class Navbar extends Component {
                     </div>
                 </nav>
 
-                <ul class="sidenav" id="mobile">
+                <ul className="sidenav" id="mobile">
                     <li className="sidenav-close nav-item">
                         <Link
                         to="/"
@@ -87,7 +94,7 @@ class Navbar extends Component {
                             window.location.pathname === "/" ? "nav-link active" : "nav-link"
                         }
                         >
-                        Home
+                        HOME
                         </Link>
                     </li>
                     <li className="sidenav-close nav-item">
@@ -97,7 +104,7 @@ class Navbar extends Component {
                             window.location.pathname === "/gallery" ? "nav-link active" : "nav-link"
                         }
                         >
-                        Gallery
+                        GALLERY
                         </Link>
                     </li>
                     <li className="sidenav-close nav-item">
@@ -107,7 +114,7 @@ class Navbar extends Component {
                             window.location.pathname === "/thewedding" ? "nav-link active" : "nav-link"
                         }
                         >
-                        The Wedding
+                        THE WEDDING
                         </Link>
                     </li>
                     <li className="sidenav-close nav-item">
@@ -117,7 +124,7 @@ class Navbar extends Component {
                             window.location.pathname === "/travel" ? "nav-link active" : "nav-link"
                         }
                         >
-                        Travel
+                        TRAVEL
                         </Link>
                     </li>
                     <li className="sidenav-close nav-item">
@@ -127,7 +134,7 @@ class Navbar extends Component {
                             window.location.pathname === "/registry" ? "nav-link active" : "nav-link"
                         }
                         >
-                        Registry
+                        REGISTRY
                         </Link>
                     </li>
                     <li className="sidenav-close nav-item">

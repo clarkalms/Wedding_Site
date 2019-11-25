@@ -4,8 +4,10 @@ class Gallery extends Component {
     
     render(){
         return (
-            <div>
-                <h1>Gallery</h1>
+            <div style={{ 
+                backgroundColor: 'green',
+                height: '740px'
+                }}>
             </div>
         )
     }

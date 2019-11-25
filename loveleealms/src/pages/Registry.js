@@ -4,8 +4,10 @@ class Registry extends Component {
     
     render(){
         return (
-            <div>
-                <h1>Registry</h1>
+            <div style={{ 
+                backgroundColor: 'blue',
+                height: '740px'
+                }}>
             </div>
         )
     }

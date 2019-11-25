@@ -4,8 +4,10 @@ class TheWedding extends Component {
     
     render(){
         return (
-            <div>
-                <h1>The Wedding</h1>
+            <div style={{ 
+                backgroundColor: 'red',
+                height: '740px'
+                }}>
             </div>
         )
     }

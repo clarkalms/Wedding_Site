@@ -1,9 +1,25 @@
 nav {
+    padding-left: 20px;
     position: fixed;
     background: rgba(0, 0, 0, 0);
     box-shadow: none;
+    z-index: 0;
+    
 }
 .nav-wrapper {
     border: none;
     
+}
+.nav-item {
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: rgb(255, 204, 213);
+    box-shadow: none!important;
+}
+.sidenav {
+    background: rgba(255, 255, 255, .8);
+}
+.sidenav .nav-item:hover {
+    color: rgb(255, 204, 213);
 }
