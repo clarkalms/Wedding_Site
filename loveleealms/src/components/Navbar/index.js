@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 import M from "materialize-css/dist/js/materialize.min.js";
-import "materialize-css/dist/css/materialize.min.css";
-
-
+import './style.css';
 
 class Navbar extends Component {
 
