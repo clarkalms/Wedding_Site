@@ -21,7 +21,9 @@ class Gallery extends Component {
                                 height: '50px',
                                 }}>
                                 <p style={{
-                                    marginBottom: '0px'
+                                    marginBottom: '0px',
+                                    marginTop: '55px',
+                                    color: 'grey'
                                 }}>GALLERY</p>
                             </div>
                         </Col>
@@ -34,11 +36,19 @@ class Gallery extends Component {
                                 key={images.id}
                                 id={images.id}
                                 image={images.pic}
+                                href={images.href}
                             >
                             </Card>
                         </Col>
                         
                             ))}
+                    </Row>
+                    <Row>
+                        <div style={{
+                            height: '30px'
+                        }}>
+                            
+                        </div>
                     </Row>
                 </Container>
 

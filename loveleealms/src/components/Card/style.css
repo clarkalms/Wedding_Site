@@ -10,3 +10,6 @@
     margin: 30px auto;
     
   }
+  .image-div:hover {
+    transform: scale(1.05);
+  }
