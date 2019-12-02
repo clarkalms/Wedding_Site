@@ -6,6 +6,7 @@ import Image5 from '../images/Gallery_image_5.jpg';
 import Image6 from '../images/Gallery_image_6.jpg';
 import Image7 from '../images/Gallery_image_7.jpg';
 import Image8 from '../images/Gallery_image_8.jpg';
+import Image9 from '../images/Coming_soon.png';
 
 var GalleryImages = [
     {
@@ -47,6 +48,10 @@ var GalleryImages = [
         "id": 8,
         "pic": Image8,
         "href": 'https://www.instagram.com/p/B2khZ-qFUjMfaA8dgdbciO1u6Yv5i34tRFUpq40/'
+    },
+    {
+        "id": 9,
+        "pic": Image9
     }
 ]
 export default GalleryImages;

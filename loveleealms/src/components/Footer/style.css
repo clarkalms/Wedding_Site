@@ -1,5 +1,5 @@
 .footer {
-position: fixed;
+/* position: fixed; */
 height: 75px;
 background: rgb(255, 204, 213);
 bottom: 0;
@@ -18,6 +18,15 @@ color: black;
     color: white;
 }
 .row-fluid {
-    margin-bottom: 7px;
+
     color: white;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+flex: 1 0 auto;
 }
