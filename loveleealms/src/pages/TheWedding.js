@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from '../components/Grid';
 import VillaImage from '../images/Wedding_Home.jpg';
+import WeddingParty from "../components/WeddingParty";
 class TheWedding extends Component {
     
     render(){
@@ -40,7 +41,8 @@ class TheWedding extends Component {
                 <Row>
                     <Col size='l6 m6 s12'>
                         <div style={{
-                            textAlign: 'center'
+                            borderBottom: '1px solid rgb(214, 214, 214)',
+                            paddingBottom: '20px'
                         }}>
                         <h6>CEREMONY</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -48,13 +50,15 @@ class TheWedding extends Component {
                     </Col>
                     <Col size='l6 m6 s12'>
                         <div style={{
-                            textAlign: 'center'
+                            borderBottom: '1px solid rgb(214, 214, 214)',
+                            paddingBottom: '20px'
                         }}>
                         <h6>RECEPTION</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </Col>
                 </Row>
+                <WeddingParty />
             </Container>
         )
     }

@@ -1,0 +1,17 @@
+.friend-pic-div {
+    padding-top: 20px;
+
+}
+img.friend-pic {
+    height: 150px;
+    border-radius: 3%;
+}
+
+.friend-name {
+    font-size: 25px;
+    padding: 16px 0;
+}
+.friend-info {
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding-bottom: 20px;
+}
