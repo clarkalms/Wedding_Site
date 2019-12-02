@@ -17,11 +17,12 @@ class Navbar extends Component {
 
     render() {
         return (
-            <div>
+            <div className='navbar-fixed'>
                 <nav>
                     <div className="nav-wrapper">
+                    <a href="/" class="brand-logo">JEEWON & CLARK</a>
                     <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul className="left hide-on-med-and-down">
+                    <ul className="right hide-on-med-and-down">
                         <li className="nav-item">
                             <Link
                             to="/"
@@ -72,7 +73,7 @@ class Navbar extends Component {
                             REGISTRY
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item rsvp">
                             <Link
                             to="/rsvp"
                             className={

@@ -1,25 +1,38 @@
 nav {
-    padding-left: 20px;
-    position: fixed;
-    background: rgba(0, 0, 0, 0);
+    padding: 0 40px;
+    /* background: rgba(0, 0, 0, 0); */
+    background-color: #fff;
     box-shadow: none;
     z-index: 3;
     
 }
-.nav-wrapper {
+.brand-logo {
+    color: grey!important;
+    font-size: 15px!important;
+}
+/* .nav-wrapper {
     border: none;
     
-}
+} */
 .nav-item {
-    font-weight: bold;
+    
+    text-align: center;
+}
+.nav-link {
+    color: grey;
 }
 .nav-link:hover {
     color: rgb(255, 204, 213);
     box-shadow: none!important;
 }
 .sidenav {
-    background: rgba(255, 255, 255, .8);
+    background: white;
 }
 .sidenav .nav-item:hover {
     color: rgb(255, 204, 213);
 }
+
+i.material-icons {
+    color: grey;
+}
+

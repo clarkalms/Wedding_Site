@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import Countdown from '../Countdown';
 import { Row, Col } from '../Grid';
+import HomeImage from '../../images/Wedding_Home.jpg';
 import './style.css';
 export default class Jumbotron extends Component {
 	render() {
 		return (
-			<div className='jumbotron'>
+			<div className='jumbotron'
+				style={{ 
+                backgroundImage: `url(${HomeImage})`,
+				backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'none',
+			}}>
 				
 				<Row>
 					<Col size='l5 m4 s12'>

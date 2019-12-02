@@ -19,7 +19,7 @@ class App extends Component {
 
       <Router>
       <div className="app-content">
-      
+          
           <Wrapper>
           <Navbar />
             <Route exact path="/" component={Home} />
