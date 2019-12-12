@@ -12,6 +12,7 @@ class TheWedding extends Component {
                     <Col size='l12 m12 s12'>
                         <div style={{
                             backgroundImage: `url(${VillaImage})`, 
+                            backgroundPosition: 'center',
                             height: '400px', 
                             width: '100%', 
                             marginTop: '75px'}}>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Countdown from '../Countdown';
 import { Row, Col } from '../Grid';
 import HomeImage from '../../images/Wedding_Home.jpg';
 import './style.css';
@@ -45,12 +44,7 @@ export default class Jumbotron extends Component {
 						</div>
 					</Col>
 				</Row>
-				<Row>
-				<Countdown 
-					weddingDate="09-08-2020 14:00:00"
-					timeFormat="MM-DD-YYYY HH:mm:ss"
-				/>
-				</Row>
+				
 			</div>
 			
 		);

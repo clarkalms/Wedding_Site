@@ -8,8 +8,11 @@ img.friend-pic {
 }
 
 .friend-name {
-    font-size: 25px;
-    padding: 16px 0;
+    font-size: 20px;
+    padding-top: 16px;
+}
+.friend-position {
+    font-size: 18px;
 }
 .friend-info {
     border-bottom: 1px solid rgb(214, 214, 214);

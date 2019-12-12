@@ -1,11 +1,20 @@
 import Dave from '../../images/Dave_Bremner.jpg';
+import Bryan from '../../images/Bryan_Hill.jpg';
 var Friends = [
     {
         id: 1,
         picture: Dave,
-        name: 'Dave Bremner',
+        name: 'DAVE BREMNER',
         position: 'Best Man',
-        info: "Dave is my cousin. He is tall and he does know it. The weather is fine up there."
+        info: "Dave is Clark's cousin. He's the one with the beard."
+
+    },
+    {
+        id: 2,
+        picture: Bryan,
+        name: 'BRYAN HILL',
+        position: 'Groomsman',
+        info: "Clark's brother. He trys to teach Clark how to be cool but has been unsuccessful."
 
     }
 ]

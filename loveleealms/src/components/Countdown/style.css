@@ -3,10 +3,11 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	color: pink;
 }
 
 .countdown-item {
-	color: white;
+	color: pink;
     font-size: 30px;
     font-weight: bold;
 	display: flex;
@@ -23,13 +24,14 @@
 }
 
 .countdown-item span {
-	color: white;
+	color: pink;
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .countdown-svg {
+	color: pink;
 	position: absolute;
 	top: 0;
 	left: 0;

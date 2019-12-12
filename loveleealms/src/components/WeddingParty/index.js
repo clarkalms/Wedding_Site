@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from '../Grid';
+import { Row, Col } from '../Grid';
 import Friends from './friends.js';
 import './style.css';
 
