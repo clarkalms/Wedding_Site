@@ -10,10 +10,6 @@ nav {
     color: grey!important;
     font-size: 15px!important;
 }
-/* .nav-wrapper {
-    border: none;
-    
-} */
 .nav-item {
     
     text-align: center;
@@ -25,13 +21,12 @@ nav {
     color: rgb(255, 204, 213);
     box-shadow: none!important;
 }
-.sidenav {
-    background: white;
+div.sidenav-overlay {
+    display: none;
 }
 .sidenav .nav-item:hover {
     color: rgb(255, 204, 213);
 }
-
 i.material-icons {
     color: grey;
 }
