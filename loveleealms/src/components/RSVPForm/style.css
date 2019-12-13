@@ -1,8 +1,87 @@
 .rsvp-wrapper {
-    background-color: rgb(223, 223, 223);
-    height: 500px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 3px;
+    padding: 50px 0 25px 0;
     margin: 50px 0;
 }
 .rsvp-title {
     text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ /* Labels */
+
+ .rsvp-wrapper p {
+     color: grey;
+ }
+
+  /* inputs */
+
+    /* attending/howmany */
+.input-field input[type=text]:focus {
+    
+    border-radius: 3px;
+    background-color: rgb(233, 233, 233);
+    
+}
+.input-field input{
+    text-indent: 10px;
+    text-decoration-color: grey;
+    font-family: 'Alata', sans-serif;
+}
+.input-field textarea{
+    text-indent: 10px;
+    text-decoration-color: grey;
+    font-family: 'Alata', sans-serif;
+}
+.input-field input[type=text]:focus + label {
+    color: #000;
+    background-color: rgb(233, 233, 233);
+}
+.input-field input[type=email]:focus + label {
+    color: #000;
+    background-color: rgb(233, 233, 233);
+}
+.select-dropdown {
+      color: grey;
+      padding: 0;
+      color: black;
+}
+.select-dropdown span {
+    color: grey;
+}
+.dropdown-content span {
+    color: green;
+}
+input.select-dropdown.dropdown-trigger {
+    color: grey;
+}
+
+  /* valid color */
+.input-field input[type=text].valid {
+    color: grey;
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 blue;
+}
+
+/* submit button */
+
+.submit-button {
+    text-align: center;
+    margin-top: 30px;
+}
+.submit-button button {
+    font-family: 'Alata', sans-serif;
+    background-color: grey;
+    height: 35px;
+    width: 80px;
+    letter-spacing: 2px;
+    color: white;
+    border-radius: 3px;
+}
+.submit-button button:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background: white;
+    
 }

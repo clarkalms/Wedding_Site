@@ -20,8 +20,8 @@ class Navbar extends Component {
             <div className='navbar-fixed'>
                 <nav>
                     <div className="nav-wrapper">
-                    <a href="/" class="brand-logo">JEEWON & CLARK</a>
-                    <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="/" className="brand-logo">JEEWON & CLARK</a>
+                    <a href="#" data-target="mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul className="right hide-on-med-and-down">
                         <li className="nav-item">
                             <Link
