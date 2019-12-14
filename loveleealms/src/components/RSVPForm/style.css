@@ -68,7 +68,7 @@ input.select-dropdown.dropdown-trigger {
     margin-top: 30px;
 }
 .submit-button button {
-    font-family: 'Alata', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     background-color: grey;
     height: 35px;
     width: 80px;
@@ -78,6 +78,6 @@ input.select-dropdown.dropdown-trigger {
 }
 .submit-button button:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: pink;
+    color: rgb(0, 0, 90);
     
 }

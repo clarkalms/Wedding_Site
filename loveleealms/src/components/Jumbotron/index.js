@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from '../Grid';
 import Countdown from '../Countdown';
-import HomeImage from '../../images/Wedding_Home.jpg';
+import HomeImage from '../../images/Villa_il_Poggiale.jpg';
 import './style.css';
 export default class Jumbotron extends Component {
 	render() {

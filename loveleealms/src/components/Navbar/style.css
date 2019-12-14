@@ -18,14 +18,14 @@ nav {
     color: grey;
 }
 .nav-link:hover {
-    color: rgb(255, 204, 213);
+    color: rgb(0, 0, 90);
     box-shadow: none!important;
 }
 div.sidenav-overlay {
     display: none;
 }
 .sidenav .nav-item:hover {
-    color: rgb(255, 204, 213);
+    color: rgb(0, 0, 90);
 }
 i.material-icons {
     color: grey;

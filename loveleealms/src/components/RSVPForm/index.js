@@ -21,10 +21,9 @@ class RSVPForm extends Component {
 		var elem = document.querySelectorAll('select');
         M.FormSelect.init(elem, {
             dropdownOptions: {
+				'0': "0",
                 '1': "1",
-                '2': "2",
-				'3': "3",
-				'4': "4"
+                '2': "2"
             }
         });
     }

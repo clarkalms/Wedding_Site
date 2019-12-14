@@ -6,7 +6,7 @@
 }
 
 .countdown-item {
-	color: pink;
+	color: rgb(0, 0, 90);
     font-size: 30px;
     font-weight: bold;
 	display: flex;
@@ -23,14 +23,14 @@
 }
 
 .countdown-item span {
-	color: pink;
+	color: rgb(0, 0, 90);
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
 .countdown-svg {
-	color: pink;
+	color: rgb(0, 0, 90);
 	position: absolute;
 	top: 0;
 	left: 0;
