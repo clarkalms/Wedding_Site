@@ -18,13 +18,19 @@ export default class WeddingParty extends Component {
                 <div className="friend-pic-div">
                     <img src={friend.picture} className="friend-pic" alt="missing image" />    
                 </div>
-                <div className="friend-name">
+                <div className="friend-name" style={{
+                    color: 'grey'
+                }}>
                     <strong>{friend.name}</strong>
                 </div>
-                <div className="friend-position">
+                <div className="friend-position" style={{
+                    color: 'grey'
+                }}>
                     <strong>{friend.position}</strong>
                 </div>
-                <div className="friend-info">
+                <div className="friend-info" style={{
+                    color: 'grey'
+                }}>
                     <p>{friend.info}</p>
                 </div>
             </Col>

@@ -5,8 +5,6 @@ import './style.css';
 
 export default class Countdown extends Component {
   state = {
-    // timeTillDate: "",
-    // timeFormat: "",
     days: undefined,
     hours: undefined,
     minutes: undefined,
@@ -17,7 +15,7 @@ componentDidMount() {
     this.interval = setInterval(() => {
         const { weddingDate, timeFormat } = this.props;
         const weddingTime = moment(weddingDate, timeFormat);
-        const currentTime = moment.tz('Europe/Florence');
+        const currentTime = moment.tz('Europe/Berlin');
         console.log("weddingTime: " + weddingTime + " currentTime: " + currentTime);
         const countdown = moment(weddingTime - currentTime);
         console.log("countdown: " + countdown);
@@ -37,8 +35,6 @@ componentWillUnmount() {
 
 render() {
 	const { days, hours, minutes, seconds } = this.state;
-	
-	// Mapping the date values to radius values
 	const daysRadius = mapNumber(days, 365, 0, 0, 360);
 	const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
 	const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
@@ -97,7 +93,7 @@ const SVGCircle = ({ radius }) => (
 <svg className="countdown-svg">
 	<path
 		fill="none"
-		stroke="white"
+		stroke="pink"
 		stroke-width="4"
 		d={describeArc(50, 50, 48, 0, radius)}
 	/>

@@ -29,11 +29,13 @@
     text-indent: 10px;
     text-decoration-color: grey;
     font-family: 'Alata', sans-serif;
+    color: grey;
 }
 .input-field textarea{
     text-indent: 10px;
     text-decoration-color: grey;
     font-family: 'Alata', sans-serif;
+    color: grey;
 }
 .input-field input[type=text]:focus + label {
     color: #000;
@@ -58,12 +60,6 @@ input.select-dropdown.dropdown-trigger {
     color: grey;
 }
 
-  /* valid color */
-.input-field input[type=text].valid {
-    color: grey;
-    border-bottom: 1px solid red;
-    box-shadow: 0 1px 0 0 blue;
-}
 
 /* submit button */
 
@@ -82,6 +78,6 @@ input.select-dropdown.dropdown-trigger {
 }
 .submit-button button:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    background: white;
+    color: pink;
     
 }

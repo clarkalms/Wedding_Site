@@ -14,19 +14,13 @@ class Gallery extends Component {
       
                 <Container>
                     <Row>
-                        <Col size='l12 m6 s12'>
-                            <div className='title-div' style={{
-                                textAlign:'center',
-                                fontSize: '40px',
-                                height: '50px',
-                                }}>
-                                <p style={{
-                                    marginBottom: '0px',
-                                    marginTop: '55px',
-                                    color: 'grey'
-                                }}>GALLERY</p>
-                            </div>
-                        </Col>
+                    <Col size='l12 m12 s12'>
+                        <p style={{
+                            textAlign: 'center',
+                            color: 'grey',
+                            fontSize: '30px'
+                        }}>GALLERY</p>
+                    </Col>
                     </Row>
                     <Row>
                         {this.state.Images.map(images => (

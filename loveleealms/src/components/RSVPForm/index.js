@@ -27,12 +27,6 @@ class RSVPForm extends Component {
 				'4': "4"
             }
         });
-        // instances.getSelectedValues();
-        // var instance = M.FormSelect.getInstance(elem);
-        // instance.getSelectedValues();
-        // this.setState({
-        //     numOfGuests: "2"
-        // });
     }
     
       handleInputChange = event => {
@@ -50,7 +44,7 @@ class RSVPForm extends Component {
 		M.FormSelect.getInstance(elem);
 		
 		console.log(this.state.numOfGuests);
-		// this.sendEmail();
+		this.sendEmail();
 		
 		alert(`First Name: ${this.state.firstName} 
 				Last Name: ${this.state.lastName} 
@@ -164,6 +158,7 @@ class RSVPForm extends Component {
             onChange={this.handleInputChange}
             type="text"
             placeholder="First Name"
+			
           />
 		  </Col>
 		  <Col size='l6 m6 s12 input-field'>
@@ -186,7 +181,7 @@ class RSVPForm extends Component {
           />
 		  </Col>
 		  <Col size='l6 m6 s12 input-field'>
-		  <p>MESSAGE:</p>
+		  <p>MESSAGE/ALLERGIES:</p>
           <textarea
             value={this.state.message}
             name="message"

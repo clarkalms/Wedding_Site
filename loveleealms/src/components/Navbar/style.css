@@ -30,4 +30,7 @@ div.sidenav-overlay {
 i.material-icons {
     color: grey;
 }
+ul #mobile.nav-link {
+    color: grey;
+}
 

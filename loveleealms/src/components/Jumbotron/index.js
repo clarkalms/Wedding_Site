@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from '../Grid';
+import Countdown from '../Countdown';
 import HomeImage from '../../images/Wedding_Home.jpg';
 import './style.css';
 export default class Jumbotron extends Component {
@@ -44,7 +45,6 @@ export default class Jumbotron extends Component {
 						</div>
 					</Col>
 				</Row>
-				
 			</div>
 			
 		);

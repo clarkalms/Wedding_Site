@@ -10,25 +10,17 @@ class Home extends Component {
     
 
             
-            <div
-            // style={{ 
-            //     backgroundImage: `url(${HomeImage})`,
-            //     backgroundSize: 'cover',
-            //     backgroundPosition: 'center',
-            //     backgroundRepeat: 'none',
-            //     backgroundAttachment: 'fixed',
-            //     height: '715px',
-            //     }}
-            >
+            <div>
                 <Container>
                     <Jumbotron />
-                </Container>
-                <Row>
+                    <Row>
 				<Countdown 
 					weddingDate="09-08-2020 14:00:00"
 					timeFormat="MM-DD-YYYY HH:mm:ss"
 				/>
 				</Row>
+                </Container>
+                
                 
                 
             </div>
