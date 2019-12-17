@@ -28,13 +28,13 @@
 .input-field input{
     text-indent: 10px;
     text-decoration-color: grey;
-    font-family: 'Alata', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     color: grey;
 }
 .input-field textarea{
     text-indent: 10px;
     text-decoration-color: grey;
-    font-family: 'Alata', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     color: grey;
 }
 .input-field input[type=text]:focus + label {
@@ -49,6 +49,7 @@
       color: grey;
       padding: 0;
       color: black;
+      font-family: 'Oxygen', sans-serif;
 }
 .select-dropdown span {
     color: grey;

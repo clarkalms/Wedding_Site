@@ -105,7 +105,7 @@ class RSVPForm extends Component {
 				className='attending-answer' 
 				name='attendingAnswer' 
 				onChange={this.handleInputChange}>
-				<option value="" disabled selected>Select</option>
+				<option value="" disabled selected>SELECT</option>
 				<option value="Yes">Yes</option>
 				<option value="No">No</option>
 				</select>
@@ -119,7 +119,7 @@ class RSVPForm extends Component {
 				className='guest-count-select' 
 				name='numOfGuests' 
 				onChange={this.handleInputChange}>
-				<option value="" disabled selected>Select</option>
+				<option value="" disabled selected>SELECT</option>
 				<option value="0">0</option>
 				<option value="1">1</option>
 				<option value="2">2</option>

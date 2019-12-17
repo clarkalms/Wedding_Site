@@ -14,7 +14,7 @@ export default class WeddingParty extends Component {
         <Row>
         {this.state.Friends.map(friend => (
                 
-            <Col size='l6 m6 s12'>
+            <Col size='l6 m6 s12 wedding-party-wrapper'>
                 <div className="friend-pic-div">
                     <img src={friend.picture} className="friend-pic" alt="missing image" />    
                 </div>
