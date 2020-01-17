@@ -1,0 +1,20 @@
+.gallery-img-div {
+    text-align: center;
+}
+.gallery-img {
+    border: 5px solid white;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+@media screen and (max-width: 992px){
+    .gallery-img {
+        height: 280px;
+        width: 280px;
+    }
+}

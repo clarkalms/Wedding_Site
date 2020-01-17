@@ -45,46 +45,55 @@ render() {
 	}
 	
 	return (
-		<Row>
-			<div className="countdown-wrapper">
-				<Col size='l3 m3 s6'>
-					{days && (
-						<div className="countdown-item">
-							<SVGCircle radius={daysRadius} />
-							{days}
-							<span>days</span>
-						</div>
-					)}
-				</Col>
-				<Col size='l3 m3 s6'>
-				{hours && (
-					<div className="countdown-item">
-						<SVGCircle radius={hoursRadius} />
-						{hours}
-						<span>hours</span>
-					</div>
-				)}
-				</Col>
-				<Col size='l3 m3 s6'>
-				{minutes && (
-					<div className="countdown-item">
-						<SVGCircle radius={minutesRadius} />
-						{minutes}
-						<span>minutes</span>
-					</div>
-				)}
-				</Col>
-				<Col size='l3 m3 s6'>
-				{seconds && (
-					<div className="countdown-item">
-						<SVGCircle radius={secondsRadius} />
-						{seconds}
-						<span>seconds</span>
-					</div>
-				)}
-				</Col>
-			</div>
-		</Row>
+        <div>
+            <Row>
+                <div className='countdown-title-div'>
+                <p className='countdown-title-p'>
+                    <span className='i-do'></span> COUNTDOWN:
+                </p>
+                </div>
+            </Row>
+            <Row>
+                <div className="countdown-wrapper">
+                    <Col size='l3 m3 s6'>
+                        {days && (
+                            <div className="countdown-item">
+                                <SVGCircle radius={daysRadius} />
+                                {days}
+                                <span>days</span>
+                            </div>
+                        )}
+                    </Col>
+                    <Col size='l3 m3 s6'>
+                    {hours && (
+                        <div className="countdown-item">
+                            <SVGCircle radius={hoursRadius} />
+                            {hours}
+                            <span>hours</span>
+                        </div>
+                    )}
+                    </Col>
+                    <Col size='l3 m3 s6'>
+                    {minutes && (
+                        <div className="countdown-item">
+                            <SVGCircle radius={minutesRadius} />
+                            {minutes}
+                            <span>minutes</span>
+                        </div>
+                    )}
+                    </Col>
+                    <Col size='l3 m3 s6'>
+                    {seconds && (
+                        <div className="countdown-item">
+                            <SVGCircle radius={secondsRadius} />
+                            {seconds}
+                            <span>seconds</span>
+                        </div>
+                    )}
+                    </Col>
+                </div>
+            </Row>
+        </div>
 	);
 }
 }
@@ -93,7 +102,7 @@ const SVGCircle = ({ radius }) => (
 <svg className="countdown-svg">
 	<path
 		fill="none"
-		stroke="rgb(0, 0, 90)"
+		stroke="grey"
 		stroke-width="4"
 		d={describeArc(50, 50, 48, 0, radius)}
 	/>

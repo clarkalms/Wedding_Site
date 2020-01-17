@@ -8,6 +8,7 @@
 }
 .registry-title {
     text-align: center;
+    font-size: 30px;
     color: grey;
 }
 .registry-info {
@@ -21,7 +22,5 @@
 .zola-img {
     height: 100px;
     width: 100px;
-}
-.zola-img:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }

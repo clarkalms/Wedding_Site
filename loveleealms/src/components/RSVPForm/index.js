@@ -5,71 +5,53 @@ import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 import "./style.css";
 
+const initialState = {
+	firstName: "",
+	lastName: "",
+	firstName2: "",
+	lastName2: "",
+	email: "",
+	message: "",
+	numOfGuests: "Select",
+	attendingAnswer: "Select"
+}
 class RSVPForm extends Component {
-    state = {
-        firstName: "",
-		lastName: "",
-		firstName2: "",
-        lastName2: "",
-		email: "",
-		message: "",
-		numOfGuests: "",
-		attendingAnswer: null
-      };
+    state = initialState;
     
-      componentDidMount(){
+    componentDidMount(){
+		console.log(this.state);
 		var elem = document.querySelectorAll('select');
         M.FormSelect.init(elem, {
             dropdownOptions: {
-				'0': "0",
-                '1': "1",
-                '2': "2"
+				'Select': "Select",
+				'0': '0',
+				'1': '1',
+				'2': '2'
             }
         });
     }
     
-      handleInputChange = event => {
+	handleInputChange = event => {
+	const { name, value } = event.target;
+	this.setState({
+		[name]: value
+	});
+	};
     
-        const { name, value } = event.target;
-    
-        this.setState({
-          [name]: value
-        });
-      };
-    
-      handleFormSubmit = event => {
+    handleFormSubmit = event => {
 		event.preventDefault();
 		var elem = document.querySelectorAll('.guest-count-select');
 		M.FormSelect.getInstance(elem);
-		
-		console.log(this.state.numOfGuests);
+		let isValid = this.validate();
+		if (isValid){
 		this.sendEmail();
+		this.submissionAlert();
+        this.setState(initialState);
+		}
 		
-		alert(`First Name: ${this.state.firstName} 
-				Last Name: ${this.state.lastName} 
-				First Name 2: ${this.state.firstName2} 
-				Last Name 2: ${this.state.lastName2} at ${this.state.email} 
-				Attending: ${this.state.attendingAnswer}
-				guestCount: ${this.state.numOfGuests} 
-				Email: ${this.state.email}
-				Message: ${this.state.message}`
-		);
-        this.setState({
-			firstName: "",
-			lastName: "",
-			firstName2: "",
-			lastName2: "",
-			email: "",
-			message: "",
-			numOfGuests: "",
-			attendingAnswer: ""
-		});
-		
-      };
-      sendEmail = e => {
-		  console.log("sendEmail called");
+    };
+    sendEmail = e => {
 		  var template_params = {
-
 			"attendingAnswer": this.state.attendingAnswer,
 			"numOfGuests": this.state.numOfGuests,
 			"firstName": this.state.firstName,
@@ -80,12 +62,56 @@ class RSVPForm extends Component {
 			"message": this.state.message
 		 }
         emailjs.send('gmail', 'template_RKaPY28P', template_params, 'user_HH95xqARzcJyFjdXFLu6p')
-          .then((result) => {
-              console.log("SUCCESS!", result.text);
-          }, (error) => {
+          	.then((result) => {
+				console.log("SUCCESS!", result.text);
+          	}, (error) => {
               console.log("error message here" + error.text);
-          });
-	  }
+			});
+	}
+
+	validate = () => {
+		if (this.state.attendingAnswer == 'Select'){
+			alert ('Please select "Yes" or "No" under "Attending?".');
+			return false;
+		} if (this.state.numOfGuests == "Select"){
+			alert ("Please select the number of guests attending.");
+			return false;
+		} if (!this.state.firstName){
+			alert ('Please enter a first name to "Guest One".');
+			return false;
+		} if (!this.state.lastName){
+			alert ('Please enter a last name to "Guest One".');
+			return false;
+		} if (this.state.attendingAnswer == "Yes" && this.state.numOfGuests == "0"){
+			alert ('Please adjust the number of guests attending.');
+			return false;
+		} if (this.state.numOfGuests < 2 && this.state.firstName2){
+			alert ('Please adjust the number of guests attending if you are bringing a guest.');
+			return false;
+		} if (this.state.numOfGuests < 2 && this.state.firstName2){
+			alert ('Please adjust the number of guests attending if you are bringing a guest.');
+			return false;
+		} if (this.state.numOfGuests == 2 && !this.state.firstName2){
+			alert ('Please enter a first name to "Guest Two" or adjust the number of guests attending.');
+			return false;
+		} if (this.state.numOfGuests == 2 && !this.state.lastName2){
+			alert ('Please enter a last name to "Guest Two" or adjust the number of guests attending.');
+			return false;
+		} if (!this.state.email.includes('@')){
+			alert ('Please enter a valid email address.');
+			return false;
+		}
+		return true;
+	}
+		
+	submissionAlert = () => {
+		if (this.state.attendingAnswer == 'Yes') {
+			alert(`Thank you for your response ${this.state.firstName}. We are looking forward to seeing you in Italy!`);
+		} else if (this.state.attendingAnswer == 'No') {
+			alert(`Thank you for your response ${this.state.firstName}. We are sorry to hear that you can't make it. Hope to see you sometime soon!`);
+		}
+	};
+	
 	  
   render() {
     return (
@@ -105,7 +131,7 @@ class RSVPForm extends Component {
 				className='attending-answer' 
 				name='attendingAnswer' 
 				onChange={this.handleInputChange}>
-				<option value="" disabled selected>SELECT</option>
+				<option value="Select" disabled selected>SELECT</option>
 				<option value="Yes">Yes</option>
 				<option value="No">No</option>
 				</select>
@@ -119,7 +145,7 @@ class RSVPForm extends Component {
 				className='guest-count-select' 
 				name='numOfGuests' 
 				onChange={this.handleInputChange}>
-				<option value="" disabled selected>SELECT</option>
+				<option value="Select" disabled selected>SELECT</option>
 				<option value="0">0</option>
 				<option value="1">1</option>
 				<option value="2">2</option>

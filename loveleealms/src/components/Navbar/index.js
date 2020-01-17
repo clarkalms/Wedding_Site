@@ -25,16 +25,6 @@ class Navbar extends Component {
                         <ul className="right hide-on-med-and-down">
                             <li className="nav-item">
                                 <Link
-                                to="/"
-                                className={
-                                    window.location.pathname === "/" ? "nav-link active" : "nav-link"
-                                }
-                                >
-                                HOME
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link
                                 to="/gallery"
                                 className={
                                     window.location.pathname === "/gallery" ? "nav-link active" : "nav-link"

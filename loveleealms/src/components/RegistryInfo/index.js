@@ -8,7 +8,7 @@ export default class RegistryInfo extends Component {
         <Container>
         <div className='registry-wrapper'>
             <Row>
-                <h4 className="registry-title">REGISTRY</h4>
+                <p className="registry-title">REGISTRY</p>
                 
             </Row>
             <Row>

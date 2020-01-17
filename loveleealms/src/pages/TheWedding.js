@@ -7,12 +7,18 @@ class TheWedding extends Component {
     render(){
         return (
             <Container>
+            <div style={{
+                backgroundColor: 'rgb(238, 238, 238)',
+                borderRadius: '3px',
+                padding: '30px 15px 25px 15px',
+                margin: '50px 0'
+            }}>
               <Row>
                     <Col size='l12 m12 s12'>
                         <p style={{
                             textAlign: 'center',
                             color: 'grey',
-                            fontSize: '30px'
+                            fontSize: '30px',
                         }}>THE WEDDING</p>
                     </Col>
                     </Row>
@@ -40,39 +46,41 @@ class TheWedding extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size='l12 m12 s12'>
-                        <div style={{
-                            textAlign: 'center',
-                            color: 'grey'
-                        }}>
-                            <p>The wedding will be held on Wednesday, September 9th, 2020. Both the ceremony and reception will be held at Villa il Poggiale. Dress code will be black tie optional.</p>
-                        </div>
-
-                    </Col>
-                </Row>
-                <Row>
                     <Col size='l6 m6 s12'>
                         <div style={{
-                            borderBottom: '1px solid rgb(214, 214, 214)',
                             paddingBottom: '20px',
                             color: 'grey'
                         }}>
                         <h6>CEREMONY</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                        <p>The ceremony will be held on Wednesday, September 9th, 2020 at four o'clock in the afternoon at <p>Villa il Poggiale</p> <p>Via Empolese, 69, 50026 San Casciano in Val di pesa Florence, Italy</p></p>                        </div>
                     </Col>
                     <Col size='l6 m6 s12'>
                         <div style={{
-                            borderBottom: '1px solid rgb(214, 214, 214)',
                             paddingBottom: '20px',
                             color: 'grey'
                         }}>
                         <h6>RECEPTION</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Following the ceremony, there will be a cocktail hour in the vineyards at half past four o'clock in the afternoon.</p>
+                        <p>A reception of appetizers, dinner, drinks, and dancing will start at six o'clock in the evening.</p>
                         </div>
                     </Col>
                 </Row>
+                <Row>
+                    <div style={{
+                        textAlign: 'center',
+                        borderBottom: '1px solid rgb(214, 214, 214)',
+                        marginBottom: '20px'
+                    }}>
+                        <p style={{
+                            marginBottom: '40px',
+                            textAlign: 'center',
+                            color: 'grey',
+                            fontSize: '30px'
+                        }}>WEDDING PARTY</p>
+                    </div>
+                </Row>
                 <WeddingParty />
+                </div>
             </Container>
         )
     }

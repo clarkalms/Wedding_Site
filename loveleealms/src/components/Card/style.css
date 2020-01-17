@@ -1,15 +1,25 @@
-.image-div {
-    background-size: cover;
-    background-position: center;
-    background-clip: content-box;
-    border: 6px solid white;
-    height: 300px;
-    width: 300px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    position: relative;
-    margin: 30px auto;
-    
-  }
-  .image-div:hover {
-    transform: scale(1.05);
-  }
+.wedding-party-wrapper {
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 3px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 20px;
+  height: auto;
+  background-color: white;
+}
+.friend-pic-div {
+  margin-top: 15px;
+}
+img.friend-pic {
+  height: 150px;
+  background-position: center;
+  border-radius: 3%;
+}
+
+.friend-name {
+  font-size: 20px;
+  padding-top: 16px;
+}
+.friend-position {
+  font-size: 18px;
+}

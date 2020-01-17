@@ -1,40 +1,65 @@
 .jumbotron {
     text-align: center;
-    margin: 35px 0;
+    margin: 0px 0 35px 0;
     border-radius: 3px;
 }
 .jumbotron .ampersand {
     text-align: center;
+    /* padding: 0!important; */
 }
 
 .title {
-    font-size: 60px;
-    font-weight: 400;
-    color: white;
-    margin-top: 190px;
+    text-align: center;
+    font-size: 40px;
+    color: grey;
+    margin: 30px;
 }
+/* #jeewon {
+    text-align: center;
+}
+#ampersand {
+    text-align: center;
+}
+#clark {
+    text-align: center;
+} */
 .location {
+    text-align: center;
     font-size: 25px;
-    color: white;
+    font-weight: 700;
+    color: rgb(0, 0, 90);
+    margin-top: 140px;
 }
 .date {
+    text-align: center;
     font-size: 25px;
+    font-weight: 700;
     color: white;
-    padding-bottom: 35px;
-    margin-bottom: 65px;
+    margin-bottom: 37px;
 }
-
+/* @media screen and (max-width: 992px){
+    #jeewon {
+        text-align: center;
+    }
+    #ampersand {
+        text-align: center;
+    }
+} */
 @media screen and (max-width: 767px){
     .jumbotron.col {
         height: 50px;
         margin: 0;
     }
     .title {
-        font-size: 50px;
+        font-size: 30px;
         margin-top: 0px;
     }
     #jeewon {
         margin-top: 50px;
+        text-align: center;
+    }
+    #ampersand {
+        text-align: center;
     }
     .date {
         padding-bottom: 10px;

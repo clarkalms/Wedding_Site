@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Row, Col } from '../Grid';
+import { Row } from '../Grid';
 import Friends from './friends.js';
+import Card from '../Card';
 import './style.css';
 
 
@@ -13,27 +14,13 @@ export default class WeddingParty extends Component {
     return (
         <Row>
         {this.state.Friends.map(friend => (
-                
-            <Col size='l6 m6 s12 wedding-party-wrapper'>
-                <div className="friend-pic-div">
-                    <img src={friend.picture} className="friend-pic" alt="missing image" />    
-                </div>
-                <div className="friend-name" style={{
-                    color: 'grey'
-                }}>
-                    <strong>{friend.name}</strong>
-                </div>
-                <div className="friend-position" style={{
-                    color: 'grey'
-                }}>
-                    <strong>{friend.position}</strong>
-                </div>
-                <div className="friend-info" style={{
-                    color: 'grey'
-                }}>
-                    <p>{friend.info}</p>
-                </div>
-            </Col>
+            <Card
+                picture={friend.picture}
+                name={friend.name}
+                position={friend.position}
+                info={friend.info}
+
+            />
         
             ))}
     </Row>
