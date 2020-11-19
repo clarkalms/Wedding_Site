@@ -1,84 +1,17 @@
 .rsvp-wrapper {
-    background-color: rgb(238, 238, 238);
-    border-radius: 3px;
-    padding: 50px 0 25px 0;
-    margin: 50px 0;
+	background-color: rgb(238, 238, 238);
+	border-radius: 3px;
+	padding: 50px 0 25px 0;
+	margin: 50px 0;
+	height: 77vh;
 }
 .rsvp-title {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 15vh;
+	height: 100%;
 }
-
- /* Labels */
-
- .rsvp-wrapper p {
-     color: grey;
- }
-
-  /* inputs */
-
-    /* attending/howmany */
-.input-field input[type=text]:focus {
-    
-    border-radius: 3px;
-    background-color: rgb(233, 233, 233);
-    
-}
-.input-field input{
-    text-indent: 10px;
-    text-decoration-color: grey;
-    font-family: 'Oxygen', sans-serif;
-    color: grey;
-}
-.input-field textarea{
-    text-indent: 10px;
-    text-decoration-color: grey;
-    font-family: 'Oxygen', sans-serif;
-    color: grey;
-}
-.input-field input[type=text]:focus + label {
-    color: #000;
-    background-color: rgb(233, 233, 233);
-}
-.input-field input[type=email]:focus + label {
-    color: #000;
-    background-color: rgb(233, 233, 233);
-}
-.select-dropdown {
-      color: grey;
-      padding: 0;
-      color: black;
-      font-family: 'Oxygen', sans-serif;
-}
-.select-dropdown span {
-    color: grey;
-}
-.dropdown-content span {
-    color: green;
-}
-input.select-dropdown.dropdown-trigger {
-    color: grey;
-}
-
-
-/* submit button */
-
-.submit-button {
-    text-align: center;
-    margin-top: 30px;
-}
-.submit-button button {
-    font-family: 'Oxygen', sans-serif;
-    background-color: grey;
-    height: 35px;
-    width: 80px;
-    letter-spacing: 2px;
-    color: white;
-    border-radius: 3px;
-}
-.submit-button button:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: rgb(0, 0, 90);
-    
+.rsvp-wrapper p {
+	color: grey;
+	height: 50%;
 }

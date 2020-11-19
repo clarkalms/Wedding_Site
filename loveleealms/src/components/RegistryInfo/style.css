@@ -1,26 +1,27 @@
 .registry-wrapper {
-    background-color: rgb(238, 238, 238);
-    height: 500px;
-    margin: 50px 0 100px 0;
-    padding-top: 30px;
-    border-radius: 3px;
-    text-align: center;
+	background-color: rgb(238, 238, 238);
+	height: 500px;
+	margin: 50px 0 100px 0;
+	padding-top: 30px;
+	border-radius: 3px;
+	text-align: center;
+	height: 77vh;
 }
 .registry-title {
-    text-align: center;
-    font-size: 30px;
-    color: grey;
+	text-align: center;
+	font-size: 30px;
+	color: grey;
 }
 .registry-info {
-    margin-bottom: 50px;
-    font-size: 16px;
-    color: grey;
+	margin-bottom: 50px;
+	font-size: 16px;
+	color: grey;
 }
 .zola-div {
-    text-align: center;
+	text-align: center;
 }
 .zola-img {
-    height: 100px;
-    width: 100px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	height: 100px;
+	width: 100px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
