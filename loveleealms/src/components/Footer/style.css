@@ -1,7 +1,7 @@
 .footer {
 	/* position: fixed; */
 	height: 75px;
-	background: rgb(0, 0, 80);
+	background: #002f59;
 	bottom: 0;
 	width: 100%;
 	padding-top: 10px;
@@ -12,13 +12,13 @@
 }
 
 .footer a {
-	color: white;
+	color: #ce9c3c;
 }
 .footer a:hover {
-	color: white;
+	color: #f3f2f2;
 }
 .row-fluid {
-	color: white;
+	color: #f3f2f2;
 }
 body {
 	display: flex;

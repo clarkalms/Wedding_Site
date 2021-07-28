@@ -1,27 +1,36 @@
 .registry-wrapper {
-	background-color: rgb(238, 238, 238);
-	height: 500px;
-	margin: 50px 0 100px 0;
-	padding-top: 30px;
 	border-radius: 3px;
 	text-align: center;
-	height: 77vh;
-}
-.registry-title {
-	text-align: center;
-	font-size: 30px;
-	color: grey;
+	top: 50%;
+	height: 90vh;
+	width: 100vw;
+	padding: 20% 10%;
 }
 .registry-info {
-	margin-bottom: 50px;
+	/* margin-bottom: 50px;
 	font-size: 16px;
-	color: grey;
+	color: #f3f2f2;
+	font-weight: 700; */
+	color: #f3f2f2;
+
+	text-align: center;
+	font-size: 20px;
+	margin-top: 13vh;
+	height: 100%;
+	font-weight: 700;
 }
 .zola-div {
 	text-align: center;
+	margin-top: 15px;
 }
 .zola-img {
 	height: 100px;
 	width: 100px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media only screen and (max-width: 600px) {
+	.registry-info {
+		font-size: 16px;
+	}
 }

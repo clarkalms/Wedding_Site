@@ -145,7 +145,16 @@ class RSVPForm extends Component {
 				<Container>
 					<Row>
 						<Col size="l12 m12 s12 rsvp-title">
-							<p>THANK YOU FOR RESPONDING BY JULY 31st, 2020.</p>
+							<p>
+								PLEASE RESPOND BY EMAIL TO{' '}
+								<a
+									className="travel-link"
+									href="mailto: jeewonandclark@gmail.com?Subject=RSVP%2007.07.2022"
+								>
+									jeewonandclark@gmail.com
+								</a>{' '}
+								BY OCTOBER 1ST, 2021.
+							</p>
 							<p>WE LOOK FORWARD TO SEEING YOU THERE!</p>
 						</Col>
 					</Row>

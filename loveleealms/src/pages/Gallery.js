@@ -13,10 +13,9 @@ class GalleryScreen extends Component {
 			<Container>
 				<div
 					style={{
-						backgroundColor: 'rgb(238, 238, 238)',
-						borderRadius: '3px',
-						padding: '30px 15px 25px 15px',
-						margin: '50px 0',
+						// backgroundColor: 'rgb(238, 238, 238)',
+						// padding: '30px 15px 25px 15px',
+						marginTop: '80px',
 					}}
 				>
 					<Row>
@@ -24,11 +23,23 @@ class GalleryScreen extends Component {
 							<p
 								style={{
 									textAlign: 'center',
-									color: 'grey',
-									fontSize: '30px',
+									color: '#ce9c3c',
+									fontSize: '20px',
+									marginTop: '70px',
 								}}
 							>
-								GALLERY
+								{/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
+								<span style={{ fontSize: '20px' }}>&#128248;</span>
+								{' @'}
+								<a
+									href={'https://zoerainphoto.com/'}
+									target={'_blank'}
+									style={{
+										color: '#ce9c3c',
+									}}
+								>
+									zoerainphoto
+								</a>
 							</p>
 						</Col>
 					</Row>

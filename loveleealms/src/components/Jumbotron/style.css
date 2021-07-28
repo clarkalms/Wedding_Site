@@ -1,18 +1,23 @@
 .jumbotron {
-    text-align: center;
-    margin: 0px 0 35px 0;
-    border-radius: 3px;
+	text-align: center;
+	/* padding: 100px; */
+	border-radius: 3px;
+	/* background-color: #f3f2f2; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .jumbotron .ampersand {
-    text-align: center;
-    /* padding: 0!important; */
+	text-align: center;
+	/* padding: 0!important; */
 }
 
 .title {
-    text-align: center;
-    font-size: 40px;
-    color: grey;
-    margin: 30px;
+	text-align: center;
+	font-size: 40px;
+	color: #f3f2f2;
+	/* margin: 30px; */
 }
 /* #jeewon {
     text-align: center;
@@ -24,18 +29,18 @@
     text-align: center;
 } */
 .location {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    color: rgb(0, 0, 90);
-    margin-top: 140px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+	color: #f3f2f2;
+	/* margin-top: 140px; */
 }
 .date {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 37px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 700;
+	color: #f3f2f2;
+	/* margin-bottom: 37px; */
 }
 /* @media screen and (max-width: 992px){
     #jeewon {
@@ -45,23 +50,11 @@
         text-align: center;
     }
 } */
-@media screen and (max-width: 767px){
-    .jumbotron.col {
-        height: 50px;
-        margin: 0;
-    }
-    .title {
-        font-size: 30px;
-        margin-top: 0px;
-    }
-    #jeewon {
-        margin-top: 50px;
-        text-align: center;
-    }
-    #ampersand {
-        text-align: center;
-    }
-    .date {
-        padding-bottom: 10px;
-    }
+@media screen and (max-width: 767px) {
+	.jumbotron.col {
+	}
+	.title .date {
+		font-size: 25px;
+		margin-top: 0px;
+	}
 }

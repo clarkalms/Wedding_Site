@@ -21,7 +21,7 @@ export default class Card extends Component {
 							<div
 								className="friend-name"
 								style={{
-									color: 'grey',
+									color: '#f3f2f2',
 								}}
 							>
 								<strong>{this.props.name}</strong>
@@ -29,7 +29,7 @@ export default class Card extends Component {
 							<div
 								className="friend-position"
 								style={{
-									color: 'grey',
+									color: '#f3f2f2',
 								}}
 							>
 								<strong>{this.props.position}</strong>
@@ -37,7 +37,7 @@ export default class Card extends Component {
 							<div
 								className="friend-info"
 								style={{
-									color: 'grey',
+									color: '#f3f2f2',
 								}}
 							>
 								<p>{this.props.info}</p>

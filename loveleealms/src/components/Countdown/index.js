@@ -22,6 +22,7 @@ export default class Countdown extends Component {
 			const minutes = countdown.format('mm');
 			const seconds = countdown.format('ss');
 			this.setState({ days, hours, minutes, seconds });
+			console.log('wedding date/time: ', days);
 		}, 1000);
 	}
 
@@ -47,45 +48,63 @@ export default class Countdown extends Component {
 				<Row>
 					<div className="countdown-title-div">
 						<p className="countdown-title-p">
-							<span className="i-do"></span> COUNTDOWN:
+							<span className="i-do"></span> 07.07.2022
 						</p>
 					</div>
 				</Row>
 				<Row>
 					<div className="countdown-wrapper">
-						<Col size="l3 m3 s6">
-							{days && (
-								<div className="countdown-item">
-									<SVGCircle radius={daysRadius} />
-									{days}
-									<span>days</span>
-								</div>
-							)}
-						</Col>
+						{daysRadius ? (
+							<Col size="l3 m3 s6">
+								{days && (
+									<div className={'countdown-item-wrapper'}>
+										<div className="countdown-item">
+											<SVGCircle radius={daysRadius} />
+											{days}
+										</div>
+										<div className={'countdown-label-wrapper'}>
+											<span className={'countdown-label'}>days</span>
+										</div>
+									</div>
+								)}
+							</Col>
+						) : null}
 						<Col size="l3 m3 s6">
 							{hours && (
-								<div className="countdown-item">
-									<SVGCircle radius={hoursRadius} />
-									{hours}
-									<span>hours</span>
+								<div className={'countdown-item-wrapper'}>
+									<div className="countdown-item">
+										<SVGCircle radius={hoursRadius} />
+										{hours}
+									</div>
+									<div className={'countdown-label-wrapper'}>
+										<span className={'countdown-label'}>hours</span>
+									</div>
 								</div>
 							)}
 						</Col>
 						<Col size="l3 m3 s6">
 							{minutes && (
-								<div className="countdown-item">
-									<SVGCircle radius={minutesRadius} />
-									{minutes}
-									<span>minutes</span>
+								<div className={'countdown-item-wrapper'}>
+									<div className="countdown-item">
+										<SVGCircle radius={minutesRadius} />
+										{minutes}
+									</div>
+									<div className={'countdown-label-wrapper'}>
+										<span className={'countdown-label'}>minutes</span>
+									</div>
 								</div>
 							)}
 						</Col>
 						<Col size="l3 m3 s6">
 							{seconds && (
-								<div className="countdown-item">
-									<SVGCircle radius={secondsRadius} />
-									{seconds}
-									<span>seconds</span>
+								<div className={'countdown-item-wrapper'}>
+									<div className="countdown-item">
+										<SVGCircle radius={secondsRadius} />
+										{seconds}
+									</div>
+									<div className={'countdown-label-wrapper'}>
+										<span className={'countdown-label'}>seconds</span>
+									</div>
 								</div>
 							)}
 						</Col>
